@@ -1,0 +1,131 @@
+.background {
+    background-color: skyblue;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    vertical-align: bottom;
+    margin: 0;
+}
+
+.lists li {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+}
+
+button {
+    margin: 1rem;
+    size: 500px;
+}
+
+.btn {
+    background-color: var(--background-color);
+    color: white;
+    font-size: xx-large;
+    padding: 5px 10px 4px;
+    border: 100;
+    border-color: black;
+    border-width: 5px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+
+    --background-color: hotpink;
+    --accent-color: blue; 
+    --text-color: black;
+    --border-size: 2px;
+}
+
+.lists li:hover {
+    background-color: black;
+}
+
+.btn.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--accent-color); 
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left; 
+} 
+
+.btn.btn-background-slide:hover::before,
+.btn.btn-background-slide:focus::before {
+    transform: scaleX(1);
+    transition: var(--text-color);
+}
+
+.btn.btn-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+
+.btn.btn-background-slide:hover
+.btn.btn-background-slide:focus {
+    color: black;
+}
+   
+.btn.btn-background-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+
+    transform: scale(1.5);
+}
+
+.btn.btn-background-circle:hover::before,
+.btn.btn-background-circle:focus::before {
+    transform: scale(0);
+}
+
+.btn.btn-background-circle {
+    z-index: 1;
+    overflow: hidden;
+    background-color:var(--accent-color);
+    transition: color var(--text-color) 500ms ease-in-out;
+}
+
+.btn.btn-background-circle:hover,
+.btn.btn-background-circle:focus {
+    color: var(--text-color);
+}
+
+.btn.btn-border-underline::before {
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--border-size);
+    background-color: var(--accent-color);
+    transition: transform 300ms ease-in-out;
+
+    transform: scaleX(-1);
+}
+
+.btn.btn-border-underline:hover::before,
+.btn.btn.btn-border-underline:focus::before {
+    transform: scaleX(0);
+}

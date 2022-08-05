@@ -1,0 +1,168 @@
+.body {
+--article-load-delay: 800ms;
+}
+
+.background {
+    background-color: lightcoral;
+    border-radius: 50px 50px 50px;
+    border-color: black;
+}
+
+.welcome {
+    text-align: center;
+    color: hotpink;
+    background-color: pink;
+    font-size: xx-large;
+    filter: drop-shadow(20px 20x 20px black);
+    text-shadow: 2px 3px 3px black;
+    background-size: cover;
+    padding: 5px;
+}
+
+#steph {
+    color: black;
+}
+
+.buttons {
+    text-align: center;
+    color: black;
+    font-size: larger;
+    animation: article-load 300ms ease-in var
+    (--article-load-delay);
+}
+
+#pic {
+   width: 200px;
+   height: 200px;
+   filter: drop-shadow(20px 20px 20px black)
+}
+
+.avatar {
+    background-image: url("./dolly 2.jpg");
+    background-size: cover;
+    
+}
+
+.newpics li {
+    text-align: left;
+}
+
+.navbar {
+    position: right;
+    width: 100%;
+}
+
+.navbar link{
+    text-decoration: none;
+    background-color: pink;
+    padding: 0;
+    width: 50%;
+}
+
+.navbar a {
+    text-decoration: solid;
+    color: black;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+    padding: 40px;
+}
+
+
+.navbar a:hover {
+    color: white;
+    background-color: black;
+}
+
+#better {
+    color: hotpink;
+}
+
+.list li {
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: solid;
+    text-align: left;
+}
+
+.small {
+    text-align: center;
+    background-color: pink;
+    background-size: cover;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 20px 10px 10px 5px;
+    border-color: black;
+    border-style:groove;
+    border-width: 5px;
+    text-decoration: solid;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.small2 {
+    background-color: lightcoral;
+    background-size: cover;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+    color: lightcoral;
+    font-weight: 400px;
+}
+
+.small3 {
+    background-color: hotpink;
+    background-size: cover;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 20px 10px 10px 5px;
+    color: white;
+    text-decoration: solid;
+    font-weight: 400px;
+    border-color: black;
+    border-style:groove;
+    filter: drop-shadow(1px 1px 1px black);
+    border-width: 5px;
+}
+
+.small4 {
+    background-color: lightpink;
+    background-size: cover;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 20px 10px 10px 5px;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: 400px;
+    border-color: black;
+    border-style:groove;
+    filter: drop-shadow(1px 1px 1px black); 
+    border-width: 5px;
+}
+
+.small5 {
+    background-color: coral;
+    background-size: cover;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 20px 10px 10px 5px;
+    text-align: center;
+    color: white;
+    text-decoration: solid;
+    font-weight: 400px;
+    border-color: black;
+    border-style:groove;
+    filter: drop-shadow(1px 1px 1px black);
+    border-width: 5px;
+}
+
+@keyframes article-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    }

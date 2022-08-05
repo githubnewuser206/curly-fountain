@@ -10,11 +10,100 @@
 
 <body class="background">
 
+    <nav class="nav">
+        <ul>
+            <li> Clearflame </li>
+            <li id="special"> Heating </li>
+            <li class="special2"> This code has been brought to you by Stephanie Lenton </li>
+            <li>Call us Today on 01634 327229 </li> 
+        </ul>
+    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="./linktoallothers.html"> Home </a></li>
+                <li> <a href="./linktoallothers.html"> Servicing </a></li>
+                <li> <a href="./linktoallothers.html"> Maintainence </a></li>
+                <li> <a href="./linktoallothers.html"> Breakdowns </a></li>
+                <li> <a href="./linktoallothers.html"> Contact </a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section>
+        <div class="banner">
+        <h1> BOILER, HEATING </h1>
+        </h2> PLUMBING REPAIRS </h2>
+        <h3>& SERVICES </h3> 
+        <p id="orange"> Over 25 years heating experience </p>
+    </div>
+<ul class="lists">
+    <li>
+        <button class="btn btn-background-slide"> GET YOUR FREE QUOTE HERE </button>
+    </li>
+    <li>
+        <button class="btn btn-background-circle"> Scroll down for more information </button>
+    </li>
+    </ul>
+    <style>
+        .parent {
+            background-color: blue;
+            border-style: groove;
+            height: 200px;
+            width: 25%;
+        }
+    
+        .child {
+            background-color: aqua;
+            height: 50%;
+            width:50%;
+            animation: left-to-right 2s ease-in-out forwards infinite alternate;
 
-   
-   
-   
-    <script src="./react.jsx"></script>
+        }
+    
+        .parent:hover .child{
+            animation-play-state: paused;
+        }
+    
+        @keyframes left-to-right {
+            0% {
+                background-color: orange;
+                transform:translateX(0%)
+            }
+    
+            33% {
+                background-color: darkorange;
+                background-size: cover;
+                transform: translateY(100%)
+            }
+    
+            50% {
+                background-color: red;
+                rotate: 15deg;
+            }
+            
+            66% {
+                background-image: url(./html/CONTACT.png);
+                background-size: cover;
+                transform: translateX(100%) translateY(100%);
+            }
+    
+            100% { 
+                background-image: url("./html/contactus.png");
+                background-size: cover;
+                transform: translateX(100%);
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+ 
+    </body>
+    </html>
+ 
 </body>
 
 </html>

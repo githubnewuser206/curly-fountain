@@ -1,1 +1,1 @@
-alert('Why did you leave?')
+alert('Welcome to Clearflame Heating')
